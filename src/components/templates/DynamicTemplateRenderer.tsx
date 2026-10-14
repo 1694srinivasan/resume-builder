@@ -1,14 +1,14 @@
 import React from 'react';
 import { ResumeData } from '../../types/resume';
 import { STRUCTURAL_STYLES_CATALOG, StructuralStyleDefinition } from './stylesCatalog';
-import { Mail, Phone, MapPin, Globe, Link2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Globe } from 'lucide-react';
 
 interface DynamicTemplateRendererProps {
   data: ResumeData;
 }
 
 export const DynamicTemplateRenderer: React.FC<DynamicTemplateRendererProps> = ({ data }) => {
-  const { basics, work, education, skills, projects, certifications, themeConfig, sectionOrder } = data;
+  const { basics, work, education, skills, projects, themeConfig, sectionOrder } = data;
   const {
     styleId = 'style-1',
     primaryColor = '#0f172a',
@@ -91,7 +91,7 @@ export const DynamicTemplateRenderer: React.FC<DynamicTemplateRendererProps> = (
       case 'minimal-caps':
         return (
           <h2 className="text-xs font-bold uppercase tracking-widest mb-3 text-gray-400">
-            // {title}
+            {"// "}{title}
           </h2>
         );
       case 'underline':

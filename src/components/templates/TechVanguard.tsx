@@ -21,7 +21,7 @@ export const TechVanguard: React.FC<ResumeTemplateProps> = ({ data }) => {
       {/* Summary */}
       {basics.summary && (
         <div className="mb-6">
-          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">// About Me</h2>
+          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">{"// About Me"}</h2>
           <p className="text-xs leading-relaxed text-gray-700">{basics.summary}</p>
         </div>
       )}
@@ -29,7 +29,7 @@ export const TechVanguard: React.FC<ResumeTemplateProps> = ({ data }) => {
       {/* Skills Pill Grid */}
       {skills && skills.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">// Tech Stack & Skills</h2>
+          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">{"// Tech Stack & Skills"}</h2>
           <div className="space-y-2">
             {skills.map((s) => (
               <div key={s.id} className="text-xs">
@@ -54,7 +54,7 @@ export const TechVanguard: React.FC<ResumeTemplateProps> = ({ data }) => {
       {/* Experience */}
       {work && work.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-3">// Experience</h2>
+          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-3">{"// Experience"}</h2>
           <div className="space-y-4">
             {work.map((w) => (
               <div key={w.id} className="border-l-2 pl-3" style={{ borderColor: accentColor }}>
@@ -81,7 +81,7 @@ export const TechVanguard: React.FC<ResumeTemplateProps> = ({ data }) => {
       {/* Projects */}
       {projects && projects.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-3">// Featured Projects</h2>
+          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-3">{"// Featured Projects"}</h2>
           <div className="grid grid-cols-2 gap-3 text-xs">
             {projects.map((p) => (
               <div key={p.id} className="p-3 rounded border border-gray-200 bg-gray-50">
@@ -105,7 +105,7 @@ export const TechVanguard: React.FC<ResumeTemplateProps> = ({ data }) => {
       {/* Education */}
       {education && education.length > 0 && (
         <div>
-          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">// Education</h2>
+          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-gray-500 mb-2">{"// Education"}</h2>
           {education.map((e) => (
             <div key={e.id} className="text-xs">
               <span className="font-bold">{e.studyType} in {e.area}</span> — {e.institution} ({e.startDate} - {e.endDate})
