@@ -59,7 +59,7 @@ export const EditorTabs: React.FC = () => {
     <div className="flex flex-col h-full bg-slate-900 border-r border-slate-800 text-slate-200">
       
       {/* Sub-Header Navigation Tabs */}
-      <div className="flex items-center gap-1 p-2 bg-slate-950/60 border-b border-slate-800 overflow-x-auto no-scrollbar">
+      <div className="flex items-center gap-1.5 p-2 sm:p-2.5 bg-slate-950/60 border-b border-slate-800 overflow-x-auto no-scrollbar shrink-0">
         {[
           { id: 'basics', label: 'Basics', icon: User },
           { id: 'work', label: 'Work', icon: Briefcase },
@@ -88,7 +88,7 @@ export const EditorTabs: React.FC = () => {
       </div>
 
       {/* Editor Form Body */}
-      <div className="flex-1 overflow-y-auto p-5 space-y-5 text-left text-xs">
+      <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-5 text-left text-xs pb-24 md:pb-6">
         
         {/* TAB 1: BASICS */}
         {activeEditorTab === 'basics' && (
@@ -214,7 +214,7 @@ export const EditorTabs: React.FC = () => {
                     </button>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     <input
                       type="text"
                       value={w.company}
@@ -292,7 +292,7 @@ export const EditorTabs: React.FC = () => {
                       <Trash2 className="w-4 h-4" />
                     </button>
                   </div>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     <input
                       type="text"
                       value={e.institution}
